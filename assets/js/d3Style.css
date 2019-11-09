@@ -4,6 +4,16 @@
   text-anchor: middle;
 }
 
+.x-axis {
+  font-size:14px;
+  fill: rgba(76, 135, 184, 0.596);
+}
+
+.y-axis {
+  font-size:14px;
+  fill: rgba(76, 135, 184, 0.596);
+}
+
 .active {
   font-weight: bold;
   fill: #000;
@@ -13,25 +23,37 @@
 
 .inactive {
   font-weight: lighter;
-  fill: #c9c9c9;
+  fill: #424141;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
 }
 
 .inactive:hover {
-  fill: #000;
+  fill: rgb(76, 135, 184);
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* font size dependent on radius, see app.js */
 .stateText {
   font-family: sans-serif;
-  fill: #fff;
+  fill: rgb(255, 255, 255);
   text-anchor: middle;
+  z-index: -1;
+  opacity: 0.8;
 }
 
+.stateText:hover {
+  fill: rgb(255, 9, 9);
+  opacity: 0.9;
+}
 .stateCircle {
-  fill: #89bdd3;
+  fill: #1a4253;
+  stroke: #e3e3e3;
+}
+
+.stateCircle:hover {
+  fill: #b81b1b;
   stroke: #e3e3e3;
 }
 
@@ -47,7 +69,7 @@
   line-height: 1.5em;
   color: #fff;
   text-align: center;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   background: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
