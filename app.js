@@ -93,6 +93,8 @@ function makeResponsive() {
 
     return circlesGroup;
   }
+
+  
   // function used for updating textGroup with a transition to new text
   function renderTextcircles(textGroup, newXScale, chosenXAxis, newYScale, chosenYAxis) {
 
